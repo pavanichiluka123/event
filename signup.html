@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(75deg,rgb(160, 73, 73),rgb(129, 87, 129));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #container{
+             width: 40%;
+             height: 80vh;
+             background-color: wheat;
+             box-shadow: 5px 5px 5px black;
+             border-radius: 20px;
+             box-shadow: 2px 2px 5px black;
+        }
+        h1{
+            position: relative;
+            top:10px;
+            left: 40%;
+        }
+        h4{
+            position: relative;
+            top:20px;
+            left: 30%;
+            font-size: 20px;
+        }
+        #email,#pass,#confirm{
+            font-size: 20px;
+            position: relative;
+            top:50px;
+            left: 10%;
+        }
+        #pass{
+            top: 70px;
+        }
+        #confirm{
+            top:90px;
+        }
+        #but1,#but2,#but3{
+            font-size: 20px;
+            padding-left: 10px;
+            font-weight: bolder;
+           width: 70%;
+           height: 30px;
+           position: relative;
+           left: 10%;
+           top: 60px;
+        }
+        #but2{
+            top: 80px;
+        }
+        #but3{
+            top: 100px;
+        }
+        #button
+        {
+         width: 30%;
+         height: 40px;
+         position: absolute;
+         left: 35%;
+         top:70%;
+         border-radius: 50px;
+         background-color:red;
+         color: white;
+         font-size: 20px;
+         letter-spacing: 2px;
+         text-shadow: 5px 5px 5px black;
+         font-weight: bolder;
+        }
+        #button:hover{
+            transform: scaleX(1.2);
+        }
+        h3{
+            position: absolute;
+            top: 80%;
+            left: 40%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+     <h1>Sign Up</h1>
+     <h4>create an Acount,its free</h4>
+     <label id="email">Email</label><br>
+     <input type="text" id="but1"><br>
+     <label id="pass">Password</label><br>
+     <input type="br" id="but2"><br>
+     <label id="confirm">Confirm password</label><br>
+     <input type="text" id="but3"><br>
+     <input type="button" id="button" value="Sign Up" onclick="register()">
+    </div>
+</body>
+ <script>
+    function register()
+    {
+        window.open("./registration.html")
+    }
+ </script>
+</html>

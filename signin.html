@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./signin.css">
+    <link rel="stylesheet" href="./signin.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <div id="leftdiv">
+            <h1 id="signin">Sign in</h1>
+            <i class="fa-brands fa-google fa-xl" style="color: #0a0a0a;"    class="icon" id="google"></i>
+            <i class="fa-brands fa-facebook fa-xl" style="color: #030303;"  class="icon" id="facebook"></i>
+            <i class="fa-brands fa-instagram fa-xl" style="color: #0c0d0d;" class="icon" id="insta"></i>
+            <h3>Use Your Email Password</h3>
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="password" id="password">
+            <h4>Forget Password</h4>
+            <input type="button" value="SIGN IN" id="sign">
+            
+        </div>
+        <div id="rightdiv">
+            <h1 id="head">Hello Guys</h1>
+            <pre>Register Your Personal Details And 
+    Use This Web And All Features
+            </pre>
+            <button id="signup" onclick="signup()">SIGN UP</button>
+        </div>
+    </div>
+
+</body>
+<script>
+    function signup()
+    {
+        window.open("./signup.html")
+    }
+</script>
+</html>
